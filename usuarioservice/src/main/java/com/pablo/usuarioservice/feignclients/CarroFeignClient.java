@@ -8,7 +8,7 @@ import com.pablo.usuarioservice.models.*;
 import java.util.List;
 
 
-@FeignClient(name = "carroservice",url = "http://localhost:8081", path = "/carros")
+@FeignClient(name = "carros-ervice",url = "http://localhost:8002", path = "/carros")
 public interface CarroFeignClient {
 
 	@PostMapping("/carro")
